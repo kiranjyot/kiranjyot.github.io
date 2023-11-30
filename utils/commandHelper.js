@@ -5,31 +5,23 @@ const COMMANDS = [
   },
   {
     command: "education",
-    description: "My Education",
+    description: "Education",
   },
   {
     command: "skills",
-    description: "My Tech Skills",
+    description: "Programming Skills",
   },
   {
     command: "projects",
-    description: "My Tech Projects",
+    description: "Grad School Projects",
   },
   {
-    command: "resume",
-    description: "My Resume",
+    command: "CV",
+    description: "Curriculum Vitae",
   },
   {
     command: "contact",
     description: "Contact Me",
-  },
-  {
-    command: "blog",
-    description: "Visit my blog",
-  },
-  {
-    command: "youtube",
-    description: "Visit my youtube channel (@livecode247)",
   },
   {
     command:
