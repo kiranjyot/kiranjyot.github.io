@@ -48,6 +48,7 @@ const getProjects = async () => {
   return projectHTML;
 };
 
+
 const getContacts = async () => {
   const contactMediums = await (await fetch("/api/contacts")).json();
   return contactMediums
@@ -70,9 +71,9 @@ export const CONTENTS = {
     ).join("") +
     `<br />
       <div class="command">Type one of the above to view. For eg. <span style="color: var(--secondary)">about</span></div>`,
-  about: () => `My name is Kiranjyot (Jasmine) Gill. I am ${getAge(
-    "April 16, 1996"
-  )} and I\'m a final year Astrophysics PhD student at Harvard University.
+  about: () => `My name is Kavin. I am ${getAge(
+    "December 25, 2005"
+  )} and I\'m a fullstack web developer
     <br/><br/>
     I love coding in Javascript, Typescript and Python, and have worked with frameworks like ReactJS, VueJS, Express, and Django. I currently use NextJS, Laravel, and NodeJS in a lot of my projects.
     <br /><br />
