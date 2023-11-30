@@ -5,19 +5,31 @@ const COMMANDS = [
   },
   {
     command: "education",
-    description: "Curriculum Vitae",
+    description: "My Education",
   },
   {
     command: "skills",
-    description: "Coding Skills",
+    description: "My Tech Skills",
   },
   {
     command: "projects",
-    description: "Projects",
+    description: "My Tech Projects",
+  },
+  {
+    command: "resume",
+    description: "My Resume",
   },
   {
     command: "contact",
     description: "Contact Me",
+  },
+  {
+    command: "blog",
+    description: "Visit my blog",
+  },
+  {
+    command: "youtube",
+    description: "Visit my youtube channel (@livecode247)",
   },
   {
     command:
@@ -66,9 +78,9 @@ export const CONTENTS = {
     ).join("") +
     `<br />
       <div class="command">Type one of the above to view. For eg. <span style="color: var(--secondary)">about</span></div>`,
-  about: () => `My name is Kiranjyot (Jasmine) Gill. I am ${getAge(
-    "April 16, 1996"
-  )} and I\'m a final year PhD in Astrophysics at Harvard University.
+  about: () => `My name is Kavin. I am ${getAge(
+    "December 25, 2005"
+  )} and I\'m a fullstack web developer
     <br/><br/>
     I love coding in Javascript, Typescript and Python, and have worked with frameworks like ReactJS, VueJS, Express, and Django. I currently use NextJS, Laravel, and NodeJS in a lot of my projects.
     <br /><br />
@@ -77,7 +89,7 @@ export const CONTENTS = {
     I am also the Chapter Officer at the <a href="https://new-delhi-space-society.github.io" target="_blank">New Delhi Space Society</a>, a chapter of the <a href="https://space.nss.org" target="_blank">National Space Society</a>. I am a core maintainer of <a href="https://typewind.vercel.app" target="_new">Typewind</a>
   `,
   education:
-    () => `I am a high school graduate from <a href="https://dpsrkp.net" target="_blank">Delhi Public School, R.K. Puram</a> and a freshman at <a href="https://uwaterloo.ca/content/home" target="_blank">Harvard University</a>.`,
+    () => `I am a high school graduate from <a href="https://dpsrkp.net" target="_blank">Delhi Public School, R.K. Puram</a> and a freshman at <a href="https://uwaterloo.ca/content/home" target="_blank">University of Waterloo</a>.`,
   skills: () => `
   I am experienced with Javascript, Typescript and Python and the web technologies dominating at the time:<br />
   <div class="skill"><b>core</b>: HTML, CSS, Node.js and PHP<br /></div>
@@ -85,14 +97,25 @@ export const CONTENTS = {
   <div class="skill"><b>database</b>: MongoDB, PostgreSQL, MySQL, and SQLite<br /></div>
   I also have knowledge of basic shell scripting and my dotfiles can be found <a href="https://github.com/kavinvalli/.dotfiles" target="_blank">here</a>.
 <br /><br />
+  I also have experience with Mobile Development with Flutter.
   `,
   projects: getProjects,
   contact: getContacts,
   resume: () => {
-    window.open("https://kiranjyot.github.io/resume.pdf", "_blank");
+    window.open("https://kavin.me/resume.pdf", "_blank");
     return "";
-  };
-
+  },
+  error: (input) =>
+    `<div class="help-command">sh: Unknown command: ${input}</div><div class="help-command">See \`help\` for info`,
+  blog: () => {
+    window.open("https://livecode247.com", "_blank");
+    return "";
+  },
+  youtube: () => {
+    window.open("https://youtube.com/@livecode247", "_blank");
+    return "";
+  },
+};
 
 function getAge(dateString) {
   const today = new Date();
