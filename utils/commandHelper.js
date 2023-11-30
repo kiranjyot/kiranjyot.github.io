@@ -91,11 +91,8 @@ export const CONTENTS = {
   resume: () => {
     window.open("https://kiranjyot.github.io/resume.pdf", "_blank");
     return "";
-  },
-  error: (input) =>
-    `<div class="help-command">sh: Unknown command: ${input}</div><div class="help-command">See \`help\` for info`,
-  },
-};
+  };
+
 
 function getAge(dateString) {
   const today = new Date();
