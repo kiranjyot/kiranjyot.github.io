@@ -10,8 +10,8 @@ export default function Home() {
       </h1>
       <p>
         Visit{" "}
-        <a href="https://kiranjyotgill.com" target="_blank" rel="noreferrer">
-          Alternative website
+        <a href="https://kiranjyotgill.github.io" target="_blank" rel="noreferrer">
+          Static Website
         </a>
       </p>
 
