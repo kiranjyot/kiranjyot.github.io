@@ -1,132 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #f1f1f1;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-body {background-color: #fff; color: #000;}
-.w3-black, .w3-hover-black:hover {background-color: #f1f1f1 !important; color: #000 !important;}
-.w3-text-light-grey {color: #000 !important;}
-.w3-light-grey {background-color: #f1f1f1 !important; color: #000 !important;}
-.w3-dark-grey {background-color: #000 !important; color: #fff !important;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3.CSS Template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+        }
+        .w3-row-padding img {
+            margin-bottom: 12px;
+        }
+        .w3-sidebar {
+            width: 120px;
+            background: #f1f1f1;
+        }
+        #main {
+            margin-left: 120px;
+        }
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0;
+            }
+        }
+        body {
+            background-color: #ffebee;
+            color: #000;
+        }
+        .w3-black, .w3-hover-black:hover {
+            background-color: #f1f1f1 !important;
+            color: #000 !important;
+        }
+        .w3-text-light-grey {
+            color: #000 !important;
+        }
+        .w3-light-grey {
+            background-color: #f1f1f1 !important;
+            color: #000 !important;
+        }
+        .w3-dark-grey {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+    </style>
 </head>
 <body class="w3-light-grey">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-atom w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user-astronaut w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#research" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-moon w3-xxlarge"></i>
-    <p>RESEARCH</p>
-  </a>
-  <a href="#outreach" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-book w3-xxlarge"></i>
-    <p>OUTREACH</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
+    <!-- Avatar image in top left corner -->
+    <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-atom w3-xxlarge"></i>
+        <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user-astronaut w3-xxlarge"></i>
+        <p>ABOUT</p>
+    </a>
+    <a href="#research" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-moon w3-xxlarge"></i>
+        <p>RESEARCH</p>
+    </a>
+    <a href="#outreach" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-book w3-xxlarge"></i>
+        <p>OUTREACH</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+    </a>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-light-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#research" class="w3-bar-item w3-button" style="width:25% !important">RESEARCH</a>
-    <a href="#outreach" class="w3-bar-item w3-button" style="width:25% !important">OUTREACH</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
+    <div class="w3-bar w3-light-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#research" class="w3-bar-item w3-button" style="width:25% !important">RESEARCH</a>
+        <a href="#outreach" class="w3-bar-item w3-button" style="width:25% !important">OUTREACH</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
 </div>
 
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-light-grey" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Kiranjyot Gill</span></h1>
-    <p>Harvard Astrophysicist</p>
-    <img src="/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-light-grey" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small">Kiranjyot Gill</span></h1>
+        <p>Harvard Astrophysicist</p>
+        <img src="image/inside.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-dark-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">A Little About Me...</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-    I am a first generation Sikh woman who has dedicated over a decade of research to the field of gravitational wave astrophysics. I will be the inaugural Sikh Harvard graduate this upcoming January 2025 with a PhD in Astronomy & Astrophysics. I was the youngest member of the LIGO-Virgo Collaboration (now known as the International Gravitational Wave Network; IGWN), which is a global team of scientists who helped discover the existence of gravitational waves. We were awarded the 2017 Nobel Prize in Physics. For my contributions, I was also named co-recipient of the 2016 Special Breakthrough Prize in Fundamental Physics, the Princess of Asturias Award given by His Majesty the King of Spain, the UK Royal Astronomical Society 2017 Group Achievement Award in Astronomy, and the Bruno Rossi prize in High Energy Astrophysics from the American Astronomical Society. I am a co-author of more than 100 scientific publications with over 9000+ citations and has given over 30 invited talks at universities, government summits, and media conclaves. My research focus is centered around detecting gravitational waves (GWs) from core-collapse supernovae (CCSNe) for the first time in human history using both terrestrial, space based and lunar based interferometers. The detection of GWs from a CCSN would be the second watershed event in the newly-born field of GW astronomy and astrophysics. 
-    </p>
-  </div>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-dark-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">A Little About Me...</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>
+            I am a first generation Sikh woman who has dedicated over a decade of research to the field of gravitational wave astrophysics. I will be the inaugural Sikh Harvard graduate this upcoming January 2025 with a PhD in Astronomy & Astrophysics. I was the youngest member of the LIGO-Virgo Collaboration (now known as the International Gravitational Wave Network; IGWN), which is a global team of scientists who helped discover the existence of gravitational waves. We were awarded the 2017 Nobel Prize in Physics. For my contributions, I was also named co-recipient of the 2016 Special Breakthrough Prize in Fundamental Physics, the Princess of Asturias Award given by His Majesty the King of Spain, the UK Royal Astronomical Society 2017 Group Achievement Award in Astronomy, and the Bruno Rossi prize in High Energy Astrophysics from the American Astronomical Society. I am a co-author of more than 100 scientific publications with over 9000+ citations and has given over 30 invited talks at universities, government summits, and media conclaves. My research focus is centered around detecting gravitational waves (GWs) from core-collapse supernovae (CCSNe) for the first time in human history using both terrestrial, space-based, and lunar-based interferometers. The detection of GWs from a CCSN would be the second watershed event in the newly-born field of GW astronomy and astrophysics.
+        </p>
+    </div>
 
-  <!-- Research Interests Section -->
-  <div class="w3-content w3-justify w3-text-dark-grey w3-padding-64" id="research">
-    <h2 class="w3-text-light-grey">Research Interests</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-    My primary research interest lies in the detection of gravitational waves from core-collapse supernovae (CCSNe). This involves using a variety of interferometers including terrestrial, space-based, and lunar-based detectors. The successful detection of these waves would mark a significant milestone in the field of gravitational wave astronomy, similar to the initial discovery of gravitational waves. Additionally, I am involved in the study of binary black hole mergers, neutron star mergers, and the development of advanced data analysis techniques for gravitational wave detection.
-    </p>
-  </div>
+    <!-- Research Interests Section -->
+    <div class="w3-content w3-justify w3-text-dark-grey w3-padding-64" id="research">
+        <h2 class="w3-text-light-grey">Research Interests</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>
+            My primary research interest lies in the detection of gravitational waves from core-collapse supernovae (CCSNe). This involves using a variety of interferometers including terrestrial, space-based, and lunar-based detectors. The successful detection of these waves would mark a significant milestone in the field of gravitational wave astronomy, similar to the initial discovery of gravitational waves. Additionally, I am involved in the study of binary black hole mergers, neutron star mergers, and the development of advanced data analysis techniques for gravitational wave detection.
+        </p>
+    </div>
 
-  <!-- Outreach Section -->
-  <div class="w3-content w3-justify w3-text-dark-grey w3-padding-64" id="outreach">
-    <h2 class="w3-text-light-grey">Outreach</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-    I am committed to engaging with the community and sharing the excitement of astrophysics and gravitational wave research. I have given numerous talks at schools, universities, and public events to inspire the next generation of scientists. I also work on outreach programs aimed at increasing diversity in STEM fields, with a focus on supporting women and underrepresented minorities. By communicating the importance and wonder of astrophysics, I hope to encourage more young people to pursue careers in science.
-    </p>
-  </div>
+    <!-- Outreach Section -->
+    <div class="w3-content w3-justify w3-text-dark-grey w3-padding-64" id="outreach">
+        <h2 class="w3-text-light-grey">Outreach</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>
+            I am committed to engaging with the community and sharing the excitement of astrophysics and gravitational wave research. I have given numerous talks at schools, universities, and public events to inspire the next generation of scientists. I also work on outreach programs aimed at increasing diversity in STEM fields, with a focus on supporting women and underrepresented minorities. By communicating the importance and wonder of astrophysics, I hope to encourage more young people to pursue careers in science.
+        </p>
+    </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-dark-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-dark-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Cambridge, MA, USA</p>
+            <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: +1 (972) 825 7793</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Email: jasmine.gill@cfa.harvard.edu</p>
+        </div><br>
+        <p>Contact me:</p>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><textarea class="w3-input w3-padding-16" placeholder="Message" required name="Message"></textarea></p>
+            <p><button class="w3-button w3-light-grey w3-padding-large" type="submit"><i class="fa fa-paper-plane"></i> Send</button></p>
+        </form>
+    </div>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Cambridge, MA, USA</p>
-      <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: +1 (972) 825 7793</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: jasmine.gill@cfa.harvard.edu</p>
-    </div><br>
-    <p>Contact me:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> Wee! 
-        </button>
-      </p>
-    </form>
-  </div>
-  
-  <!-- Footer -->
-
+    <!-- Footer -->
 </div>
-
 </body>
 </html>
