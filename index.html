@@ -52,6 +52,28 @@
             background-color: #000 !important;
             color: #fff !important;
         }
+        
+        /* New styles for the animated text */
+        .animated-text {
+            font-weight: bold;
+            font-size: 3em; /* Adjust size as needed */
+            background: -webkit-linear-gradient(45deg, gold, blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: colorChange 5s linear infinite;
+        }
+
+        @keyframes colorChange {
+            0% {
+                background: -webkit-linear-gradient(45deg, gold, blue);
+            }
+            50% {
+                background: -webkit-linear-gradient(45deg, blue, gold);
+            }
+            100% {
+                background: -webkit-linear-gradient(45deg, gold, blue);
+            }
+        }
     </style>
 </head>
 <body class="w3-light-grey">
