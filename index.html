@@ -52,7 +52,7 @@
             background-color: #000 !important;
             color: #fff !important;
         }
-        
+
         /* New styles for the animated text */
         .animated-text {
             font-weight: bold;
@@ -75,7 +75,7 @@
                 color: gold;
             }
         }
-        
+
         /* New styles for section headings */
         .animated-heading {
             font-weight: bold;
@@ -99,7 +99,7 @@
                 color: lightblue;
             }
         }
-        
+
         /* Style for horizontal rules */
         .section-divider {
             height: 2px; /* Smaller height for the line */
@@ -120,6 +120,17 @@
             100% {
                 background: linear-gradient(45deg, lightblue, blue);
             }
+        }
+
+        /* Adjust the padding and margin of sections */
+        .section {
+            padding: 32px 16px;
+        }
+        .section.about {
+            padding-bottom: 16px;
+        }
+        .section.research {
+            padding-top: 16px;
         }
     </style>
 </head>
@@ -167,11 +178,11 @@
     <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
         <h1 class="animated-text"><span class="w3-xxxlarge">Kiranjyot Gill</span></h1>
         <h2 class="w3-xlarge">Harvard Astrophysicist</h2>
-        <img src="https://raw.githubusercontent.com/kiranjyot/kg.github.io/main/images/inside.JPG" alt="Kiranjyot" class="w3-image" width="450" height="680">
+        <img src="https://raw.githubusercontent.com/kiranjyot/kiranjyot.github.io/main/images/inside.JPG" alt="Kiranjyot" class="w3-image" width="450" height="680">
     </header>
 
     <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-white w3-padding-64" id="about">
+    <div class="w3-content w3-justify w3-text-white w3-padding-64 section about" id="about">
         <h2 class="animated-heading">About Me</h2>
         <hr class="section-divider">
         <p>
@@ -181,26 +192,26 @@
             Publications: <a href="https://orcid.org/0000-0003-4341-9824" target="_blank">ORCiD Profile</a>
         </p>
         <p>
-            <a href="https://raw.githubusercontent.com/kiranjyot/kg.github.io/main/docs/CV.pdf" target="_blank">Curriculum Vitae</a>
+            <a href="https://raw.githubusercontent.com/kiranjyot/kiranjyot.github.io/main/docs/CV.pdf" target="_blank">Curriculum Vitae</a>
         </p>
     </div>
 
     <!-- Research Section -->
-    <div class="w3-content w3-justify w3-text-white w3-padding-64" id="research">
+    <div class="w3-content w3-justify w3-text-white w3-padding-64 section research" id="research">
         <h2 class="animated-heading">My Research</h2>
         <hr class="section-divider">
         <p>My primary research interest lies in the detection of gravitational waves from core-collapse supernovae (CCSNe). This involves using a variety of detectors, including terrestrial, space-based, and lunar-based detectors. The successful detection of these waves would mark a significant milestone in the field of gravitational wave astronomy, similar to the initial discovery of gravitational waves. Additionally, I am involved in the study of binary black hole mergers, neutron star mergers, and the development of advanced data analysis techniques for gravitational wave detection.</p>
     </div>
 
     <!-- Outreach Section -->
-    <div class="w3-content w3-justify w3-text-white w3-padding-64" id="outreach">
+    <div class="w3-content w3-justify w3-text-white w3-padding-64 section" id="outreach">
         <h2 class="animated-heading">My Outreach</h2>
         <hr class="section-divider">
         <p>I am committed to engaging with the community and sharing the excitement of astrophysics and gravitational wave research. I have given numerous talks at schools, universities, and public events to inspire the next generation of scientists. I also work on outreach programs aimed at increasing diversity in STEM fields, with a focus on supporting women and underrepresented minorities. By communicating the importance and wonder of astrophysics, I hope to encourage more young people to pursue careers in science.</p>
     </div>
 
     <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content w3-text-white" id="contact">
+    <div class="w3-padding-64 w3-content w3-text-white section" id="contact">
         <h2 class="animated-heading">Contact Me</h2>
         <hr class="section-divider">
         <div class="w3-section">
